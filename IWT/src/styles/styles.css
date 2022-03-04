@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+/******background-image*****/ 
+body {
+    margin:0px;
+    padding:0px;
+    background-image: url("../images/Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/******logo******/
+.logo {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/******headers*****/
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 250%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3 {
+    font-size: 150%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*****hr*****/
+hr {
+    border:1px solid rgb(0, 0, 0);
+}
+
+/*****navigation bar*****/
+.nav {
+    margin-bottom:20px;
+    overflow:hidden;
+    width:100%;
+    background-color: rgb(37, 36, 36);
+}
+.nav ul {
+    margin:0px;
+    padding:0px;
+    list-style-type: none;
+}
+
+.nav li {
+    float: left;
+    display: inline;
+    padding: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav li:hover {
+    background-color: black;
+}
+
+.nav {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+.nav::after {
+    content:"";
+    clear:both;
+    display:table;
+}
+
+/*****table*****/
+.productData {
+    font-size: 18px;
+    text-align: center;
+    margin:20px 40px 0 40px;
+    background-image: linear-gradient(to bottom, rgb(125, 202, 233), rgb(66, 135, 226));
+}
+
+.productData th {
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding:20px;
+    background-color: rgba(255, 233, 233, 0.315);
+}
+
+.productDescription {
+    text-align: left;
+}
+
+.productDescription ol {
+    margin:8px;
+}
+
+.white {
+    color:rgb(255, 255, 255);
+}
+
+table, .productData th, .productData td {
+    border-collapse: collapse;
+    border:1px groove rgb(0, 0, 39);
+}
+
+/*****table transition*****/
+.tableRowSelect:hover {
+    transition:background-color 2s;
+    background-color: rgba(78, 78, 78, 0.644);
+}
+
+/****footer****/
+.footer {
+    margin-top:20px;
+    color: white;
+    text-align: center;
+    background-color: rgb(37, 36, 36);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding:20px;
+}
+
+.footer a {
+    color:rgb(66, 135, 226)
+}
+
+
+/****or scroll- experiment purpose****/
+.box {
+    width:100px;
+    height: 700px;
+
+}
