@@ -30,3 +30,88 @@ function loadData(data) {
 }
 
 
+/******For Loop *******/
+function priceForLoop(){
+    var array = ["Iphone XS - $1349" , "Iphone XS Plus- $1349", 
+    "Iphone XS - $999" , "Iphone 8 Plus - $599" , "Iphone SE - $399"];
+    let text = "";
+
+    for (var x = 0; x < 5; x++) {
+        text = text + array[x] + "<br>"
+    }
+
+    document.getElementById("price").innerHTML = text;
+}
+
+function productForInLoop(){
+    var array = ["Iphone XS - $1349" , "Iphone XS Plus- $1999", 
+    "Iphone XS - $999" , "Iphone 8 Plus - $599" , "Iphone SE - $399"];
+    let text = "";
+
+    for (var x in array) {
+        text = text + array[x] + "<br>";
+    }
+
+    document.getElementById("price").innerHTML = text;
+}
+
+//priceHigher//
+function priceHigher(){
+    var array = ["1349" , "1999", "999" , "599" , "399"];
+    let text = "";
+
+    for (var x in array){
+        if (array[x] > 1000)
+        {
+            text = text + "$" +  array[x] + "<br>" ;
+        }
+    }
+
+    document.getElementById("price").innerHTML = text;
+}
+
+//priceLower//
+function priceLower(){
+    var array = ["1349" , "1999", "999" , "599" , "999"];
+    let text = "";
+
+    for (var x in array){
+        if (array[x] < 1000)
+        {
+            text = text + "$" +  array[x] + "<br>" ;
+        }
+    }
+
+    document.getElementById("price").innerHTML = text;
+}
+
+
+//sum of first 10 natural numbers
+function natural(){
+    let x = 0;
+
+    for(var i = 1; i <= 10; i++)
+    {
+        x = x + i;
+    }
+
+    document.getElementById("price").innerHTML = x;
+}
+
+//pattern
+function pattern(){
+
+    var p = "";
+    var x = 1;
+
+    for (var row = 1; row <= 4; row++ )
+    {
+        for(var col = 1; col <= row; col++, x++ )
+        {
+            p = p + x + "       ";
+        }
+        p = p + "<br>";
+    }
+
+    document.getElementById("price").innerHTML = p;
+}

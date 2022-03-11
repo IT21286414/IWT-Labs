@@ -171,8 +171,8 @@ table, .productData th, .productData td {
 }
 
 .h-image-container {
-    margin:auto;
-    width:44%;
+    display: flex;
+    justify-content: center;
 }
 
 #hidden-image {
@@ -188,4 +188,9 @@ table, .productData th, .productData td {
     margin-top:20px;
     padding:20px;
     background-image: linear-gradient(to bottom, rgb(125, 202, 233), rgb(66, 135, 226));
+}
+
+
+.price-list {
+   margin:20px;
 }
