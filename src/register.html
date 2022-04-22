@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--Name    : L.P.N. Gunathilaka
+        IT No   : IT21286414
+        Campus  : Malabe
+        Labsheet: 2 -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/myScript.js"></script>
+
+    <!--Add a title (a)-->
+    <title>My Shopping Cart</title>
+</head>
+<body>
+
+    <!--Add a logo (b)-->
+    <img class="logo" src="images/cart icon.png" width="200px" heigth="200px">
+
+    <!--Add a Header (c)-->
+    <header>
+        <h1>Shopping Cart</h1>
+        <h3>The online shopping store</h3>
+    </header>
+
+    <!--Add a horizontal line (d)-->
+    <hr>
+
+    <!--Add a horizontal menu (e)-->
+    <div class="nav"><ul>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="news.html">News</a>
+        </li>
+        <li>
+            <a href="register.html">Contact</a>
+        </li>
+        <li>
+            <a href="http://courseweb.sliit.lk/">About Us</a>
+        </li>
+    </ul></div>
+
+ <header>
+     <div class="registration-form">
+         <form>
+             <div class="form-row">
+                <div class="field">First Name</div><div class="colan">:</div>
+                <input class="form-input" type="text" name="fname">
+             </div>
+
+             <div class="form-row">
+                <div class="field">Last Name</div><div class="colan">:</div>
+                <input class="form-input" type="text" name="lname">
+             </div> 
+             
+             <div class="form-row">
+                <div class="field">Gender</div><div class="colan">:</div>
+                
+                <div class="form-input">
+                <input class="radio" type="radio" id="male" name="gender" value="male">
+                    <lable for="male">Male</lable><br>
+                <input class="radio" type="radio" id="female" name="gender" value="female">
+                    <lable for="female">Female</lable>
+             </div> </div>
+             
+             <div class="form-row">
+                <div class="field">Mobile Number</div><div class="colan">:</div>
+                <input class="form-input" type="tel" name="tpNo" pattern="[0-9]{10}">
+             </div> 
+             
+             <div class="form-row">
+                <div class="field">Email Address</div><div class="colan">:</div>
+                <input class="form-input" type="email" name="email" 
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+             </div>
+
+             <div class="form-row">
+                <div class="field">Address</div><div class="colan">:</div>
+                <textarea rows="7" class="form-input" value="sda"></textarea>
+             </div>
+
+             <div class="form-row">
+                <div class="field">DOB</div><div class="colan">:</div>
+                <select class="form-select" name="day">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+
+                <select class="form-select" name="month">
+                    <option value="1">Jan</option>
+                    <option value="2">Feb</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">Aug</option>
+                    <option value="9">Sept</option>
+                    <option value="10">Oct</option>
+                    <option value="11">Nov</option>
+                    <option value="12">Dec</option>
+                </select>
+
+            
+             <select class="form-select" name="year">
+                <option value="1">1995</option>
+                <option value="2">1996</option>
+                <option value="3">1997</option>
+                <option value="4">1998</option>
+                <option value="5">1999</option>
+                <option value="6">2000</option>
+                <option value="7">2001</option>
+                <option value="8">2002</option>
+                <option value="9">2003</option>
+                <option value="10">2004</option>
+                <option value="11">2005</option>
+            </select>
+         </div>
+
+         <div class="form-row">
+            <div class="field">Password</div><div class="colan">:</div>
+            <input class="form-input" type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" 
+            onfocus="focus()" onkeyup="keyup()" onblur="blur()" required>
+
+            <div id="message">
+                <h3>Password must contain the following:</h3>
+                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                <p id="number" class="invalid">A <b>number</b></p>
+                <p id="length" class="invalid">Minimum <b>5 characters</b></p>
+              </div>
+        
+        </div> 
+         
+         </form>
+     </div>
+ </header>
+
+    <!--for scroll- experiment purpose-->
+    <div class="box"></div>
+
+    <!--Add a footer (g)-->
+    <div class="footer">
+        <footer>
+            <p>Created by : Pawara Gunathilaka</p>
+            <a href="http://courseweb.sliit.lk/" target="_blank">Visit to Our Course</a>
+        </footer>
+    </div>
+
+    
+</body>
+</html>
